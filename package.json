@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open:chrome": "npx cypress run -b chrome --headed",
+    "cypress:open:firefox":"npx cypress run -b firefox --headed",
+    "cypress:run:chrome":"npx cypress run -b chrome --headed --spec cypress/e2e/pageObjectLoginUser.cy.js",
+    "cypress:run:firefox":"npx cypress run -b firefox",
+    "cypress:run:chrome:simple":"npx cypress run"
   },
   "keywords": [],
   "author": "",
